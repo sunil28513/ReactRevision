@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from './foodlist.module.css'
 
 const FoodList = ({list}) => {
   return (
@@ -7,7 +8,7 @@ const FoodList = ({list}) => {
             { 
                 list.map((lunch, index) =>
                     (
-                        <li key={index}>{lunch} </li>
+                        <li className={`${styles['red']}`} key={index}>{lunch} </li>
                     )
                 )
             }
